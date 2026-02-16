@@ -1,0 +1,83 @@
+.header {
+    background: #000;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+/* FULL WIDTH CONTAINER */
+.container {
+    width: 100%;
+    padding: 0 40px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* ===== LOGO ===== */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.logo-img {
+    height: 34px;
+    border-radius: 50%;
+}
+.logo-text {
+    font-size: 22px;
+    font-weight: 700;
+}
+/* ===== NAV DESKTOP ===== */
+
+.navbar {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+}
+/* ===== LOGIN BUTTON ===== */
+.btn-login {
+    background: #eb2525;
+    padding: 8px 16px;
+    border-radius: 18px;
+    color: white;
+    text-decoration: none;
+}
+}
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: #000;
+
+        flex-direction: column;
+        gap: 0;
+
+        max-height: 0;
+        overflow: hidden;
+        transition: 0.3s;
+    }
+
+    .navbar a {
+        padding: 14px 16px;
+        border-top: 1px solid #222;
+    }
+
+    .navbar.show {
+        max-height: 300px;
+    }
+}
